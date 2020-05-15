@@ -1,7 +1,20 @@
 {
-    "name": "resu.me",
-    "version": "1.0.0",
-    "description": "A RUHacks 2020 project",
-    "main": "src/server.js",
-    "private": true
+  "name": "resu.me",
+  "version": "1.0.0",
+  "description": "A RUHacks 2020 project",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliewang2020/resu.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliewang2020/resu.me/issues"
+  },
+  "homepage": "https://github.com/juliewang2020/resu.me#readme"
 }
