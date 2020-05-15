@@ -1,0 +1,7 @@
+{
+    "name": "resu.me",
+    "version": "1.0.0",
+    "description": "A RUHacks 2020 project",
+    "main": "src/server.js",
+    "private": true
+}
