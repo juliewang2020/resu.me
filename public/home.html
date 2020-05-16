@@ -1,111 +1,137 @@
 <!DOCTYPE html>
+<!-- Blue: #344A5E
+Yellow: #FFD15C
+Font: Futura -->
 <html lang="en">
 <title>resu.me</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="idea.png">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Futura", sans-serif}
-.w3-bar,h1,button {font-family: "Futura", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="idea.png" />
+<link rel="stylesheet" href="homestyle.css">
+
 <body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+      <img src="resume-nobg.png" style="height: 20%; width: 20%; object-fit: fill; padding: 0px 0px 0px 15px;" />
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="tips.html" style="float: right;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tips</a> <a href="nlp.html"
+        style="float: right;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">NLP
+        Analysis</a> <a href="resume.html" style="float: right; text-align:center; display:inline-block;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume Builder</a> <a href="#"
+        style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    </div>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume Builder</a>
-    <a href="tips.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tips</a>
-    <a href="nlp.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">NLP Analysis</a>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="resume.html" class="w3-bar-item w3-button w3-padding-large">Resume Builder</a>
+      <a href="tips.html" class="w3-bar-item w3-button w3-padding-large">Tip</a>
+      <a href="nlp.html" class="w3-bar-item w3-button w3-padding-large">NLP Analysis</a>
+    </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large">Resume Builder</a>
-    <a href="tips.html" class="w3-bar-item w3-button w3-padding-large">Tip</a>
-    <a href="nlp.html" class="w3-bar-item w3-button w3-padding-large">NLP Analysis</a>
+  <!-- Header -->
+  <div class="container">
+    <header style="padding: 10px 5px;"></header><img src="banner.png">
+    <button class="button">Let's Build Your Resume!</button>
   </div>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-light-blue w3-center" style="padding:100px 5px">
-  <img src="resume-nobg.png" style='height: 50%; width: 50%; object-fit: fill'> 
-  <button class="w3-btn w3-indigo w3-padding-large w3-large w3-margin-top">Get Started</button>
   <!-- <div class="w3-display-bottommiddle w3-container">
     <p class="w3-xlarge">Resume Tailoring Made Easy!</p>
   </div> -->
   <!-- <div class="w3-display-bottommiddle w3-container">
       <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
   </div> -->
-</header>
+  </header>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content" style="text-align: right;">
+      <div class="w3-twothird">
         <h1>The Importance of a Good Resume</h1>
-        <h5 class="w3-padding-32">Your resume is your chance to make a great first impression on a recruiter or ATS scanner!</h5>
-  
-        <p class="w3-text-grey"> It can be incredibly overwhelming to be constantly changing your resume to match each position, especially when you 
-            are constantlys swapping out experiences and projects. We're here to make it easy! Store ALL your experiences and simply drag
-            and drop what you need into your resume!</p>
-    </div>
+        <h5 class="w3-padding-32">
+          Your resume is your chance to make a great first impression on a
+          recruiter or ATS scanner!
+        </h5>
 
-    <div class="w3-third w3-center">
-        <img src="resume-icon.png" style='height: 100%; width: 100%; object-fit: contain' >
+        <p class>
+          It can be incredibly overwhelming to be constantly changing your
+          resume to match each position, especially when you are constantlys
+          swapping out experiences and projects. We're here to make it easy!
+          Store ALL your experiences and simply drag and drop what you need
+          into your resume!
+        </p>
+      </div>
+
+      <div class="w3-third w3-center">
+        <img src="resume-icon.png" style="height: 100%; width: 100%; object-fit: contain;" />
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  
+
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-third w3-center">
-        <img src="resume-head.png" style='height: 100%; width: 100%; object-fit: contain' >
+        <img src="resume-head.png" style="height: 100%; width: 100%; object-fit: contain;" />
       </div>
-  
+
       <div class="w3-twothird">
         <h1>How Does It Work?</h1>
-        <h5 class="w3-padding-32">We make tailoring your resume easy. All you need to do is drag and drop your info!</h5>
-  
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h5 class="w3-padding-32">
+          We make tailoring your resume easy. All you need to do is drag and
+          drop your info!
+        </h5>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat
+          non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat.
+        </p>
       </div>
     </div>
   </div>
-  
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Resume Tip of the Day:</h1>
+  <div style="background-color: #FFD15C; color: #344A5E;"" class="w3-container w3-center w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Resume Tip of the Day!</h1>
     <h2 class="w3-margin w3-large">Use numbers to quantify your impact!</h2>
-</div>
+  </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
- <p>Designed and Made by Michelle, Julie, Jess, and Helen for RUHacks 2020</p>
- <p>Maybe add our linkedins later </p>
- <i class="fa fa-linkedin w3-hover-opacity"></i>
-</footer>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center">
+    <p>
+      Designed and Made by Michelle <i class="fa fa-linkedin w3-hover-opacity"></i>, Julie <i
+        class="fa fa-linkedin w3-hover-opacity"></i>, Jess <a href="https://www.linkedin.com/in/truong-jessica-tx/"
+        target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>, and Helen <i
+        class="fa fa-linkedin w3-hover-opacity"></i> for RUHacks 2020
+    </p>
+  </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 </body>
+
 </html>

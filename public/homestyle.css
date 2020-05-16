@@ -1,0 +1,59 @@
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Futura", sans-serif;
+  color: #344A5E;
+}
+.w3-bar,
+h1,
+button {
+  font-family: "Futura", sans-serif;
+}
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.container .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #344A5E;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
