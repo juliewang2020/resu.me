@@ -55,18 +55,14 @@ Font: Futura -->
     <div class="w3-content" style="text-align: right;">
       <div class="w3-twothird">
         <h1>Upload your Resume!</h1>
-        <input type="file" id="input" accept=".doc, .docx">
+        <form action="http://storage.googleapis.com/bucketName" 
+            method="post" enctype="multipart/form-data">
+            <input type="hidden" name="key" value="${filename}" />
+            <input type="hidden" name="success_action_status" value="201" />
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
       </div>
-      <form action="http://storage.googleapis.com/bucketName" 
-        method="post" enctype="multipart/form-data">
-        <input type="hidden" name="key" value="${filename}" />
-        <input type="hidden" name="success_action_status" value="201" />
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-      </form>
-
-
-
       <div class="w3-third w3-center">
         <img src="resume-icon.png" style="height: 100%; width: 100%; object-fit: contain;" />
       </div>
