@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/juliewang2020/resu.me/issues"
   },
-  "homepage": "https://github.com/juliewang2020/resu.me#readme"
+  "homepage": "https://github.com/juliewang2020/resu.me#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
