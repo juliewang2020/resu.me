@@ -61,39 +61,31 @@ h6 {
 
 /* resume style */
 /* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+.flex-container {
+  display: flex;
+  padding: 40px;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
-}
+.flex-child {
+  flex: 1;
+  border: 2px solid yellow;
+}  
 
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
-}
+.flex-child:first-child {
+  margin-right: 20px;
+} 
 
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#rcorners4 {
+  border-radius: 100%;
+  background: #ffffff;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+} 
+
+div.polaroid {
+  overflow:hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-}
-
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+  border-radius: 100px;
 }

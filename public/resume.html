@@ -17,7 +17,7 @@ Font: Futura -->
 
 <body>
   <!-- Navbar -->
-  <div class="w3-top">
+  <div class="w3-top" style="position:static;">
     <div class="w3-bar w3-white w3-card w3-left-align w3-large">
       <a href="home.html"><img src="resume-nobg.png"
           style="height: 20%; width: 20%; object-fit: fill; padding: 0px 0px 0px 15px;" /></a>
@@ -29,8 +29,8 @@ Font: Futura -->
         <a href="nlp.html" style="float: right;"
           class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">NLP Analysis</a>
         <a href="resume.html" style="float: right; text-align:center; display:inline-block;"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Resume Builder</a>
-        <a href="#" style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-hover-blue-gray">Home</a>
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue-gray">Resume Builder</a>
+        <a href="home.html" style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -55,19 +55,21 @@ Font: Futura -->
 </header>
 
  <!-- First Grid -->
- <div class="split left">
-  <div class="centered">
-    <img src="resume-head.png">
-    <h2>left side</h2>
-  </div>
-</div>
+ <div class="flex-container">
 
-<div class="split right">
-  <div class="centered">
-    <img src="resume-icon.png">
-    <h2>right side</h2>
+  <div class="flex-child magenta">
+    <div class="polaroid">
+      <p id="rcorners4" style="padding:20px"> Experience 1</p>
+    </div>
   </div>
+  
+  <div class="flex-child green">
+    Flex Column 2
+  </div>
+  
 </div>
+ 
+
 
 
 
