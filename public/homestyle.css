@@ -73,7 +73,16 @@ h6 {
 
 .flex-child:first-child {
   margin-right: 20px;
+
 } 
+
+.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* <-- this is the fix */
+}
+
 
 
 div.polaroid {
