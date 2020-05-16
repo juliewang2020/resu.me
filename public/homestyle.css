@@ -84,7 +84,6 @@ h6 {
 }
 
 
-
 div.polaroid {
   overflow:hidden;
   box-shadow: 5px 5px rgb(0,0,0, 0.19);
@@ -93,3 +92,4 @@ div.polaroid {
   border-radius: 100px;
   position:relative;
 }
+
