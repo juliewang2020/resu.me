@@ -17,11 +17,17 @@ Font: Futura -->
 
 <!-- Style for Add Experience -->
 <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
-  * {box-sizing: border-box;}
-  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   /* Full-width input fields */
-  input[type=text], input[type=password] {
+  input[type=text],
+  input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -29,13 +35,14 @@ Font: Futura -->
     border: none;
     background: #f1f1f1;
   }
-  
+
   /* Add a background color when the inputs get focus */
-  input[type=text]:focus, input[type=password]:focus {
+  input[type=text]:focus,
+  input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
-  
+
   /* Set a style for all buttons */
   button {
     color: black;
@@ -46,61 +53,71 @@ Font: Futura -->
     width: 100%;
     opacity: 0.9;
     border-radius: 50%;
-    box-shadow: 5px 5px rgb(0,0,0, 0.19);
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.19);
     background-color: #F5F5F5;
   }
-  
+
   button:hover {
-    opacity:1;
+    opacity: 1;
   }
-  
+
   /* Extra styles for the cancel button */
   .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
     border-radius: 0px;
   }
-  
+
   /* Float cancel and signup buttons and add an equal width */
-  .cancelbtn, .signupbtn {
+  .cancelbtn,
+  .signupbtn {
     float: left;
     width: 50%;
   }
-  
+
   /* Add padding to container elements */
   .container {
     padding: 16px;
-  
+
   }
-  
+
   /* The Modal (background) */
   .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
     background-color: #474e5d;
-    padding-top: 50px;;
+    padding-top: 50px;
+    ;
   }
-  
+
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    /* Could be more or less, depending on screen size */
   }
-  
+
   /* Style the horizontal ruler */
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
-   
+
   /* The Close Button (x) */
   .close {
     position: absolute;
@@ -110,52 +127,53 @@ Font: Futura -->
     font-weight: bold;
     color: #f1f1f1;
   }
-  
+
   .close:hover,
   .close:focus {
     color: #f44336;
     cursor: pointer;
   }
-  
+
   /* Clear floats */
   .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
-  
+
   /* Change styles for cancel button and signup button on extra small screens */
   @media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
+
+    .cancelbtn,
+    .signupbtn {
+      width: 100%;
     }
   }
 
   img.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 400px;
-}
-  </style>
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 400px;
+  }
+</style>
 
 
 <body>
   <!-- Navbar -->
   <div class="w3-top" style="position:static;">
     <div class="w3-bar w3-white w3-card w3-left-align w3-large">
-      <a href="home.html"><img src="resume-nobg.png"
-          style="height: 20%; width: 20%; object-fit: fill; padding: 0px 0px 0px 15px;" /></a>
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-          href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
-            class="fa fa-bars"></i></a>
-        <a href="tips.html" style="float: right;"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Tips</a>
-        <a href="nlp.html" style="float: right;"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">NLP Analysis</a>
-        <a href="resume.html" style="float: right; text-align:center; display:inline-block;"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue-gray">Resume Builder</a>
-        <a href="home.html" style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+      <a href="home.html"><img style="width: 15%;" src="resume-nobg.png"
+        style="height: 10%; width: 20%; object-fit: fill; padding: 0px 0px 0px 15px;" /></a>
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="tips.html" style="float: right;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Tips</a>
+      <a href="nlp.html" style="float: right;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">NLP Analysis</a>
+      <a href="resume.html" style="float: right; text-align:center; display:inline-block;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue-gray">Resume Builder</a>
+      <a href="home.html" style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -169,123 +187,126 @@ Font: Futura -->
 
   <!-- Header -->
 
-<header>
-<div style="background-color: #FFD15C; color: #344A5E;" , class="container-resume">
-<header style="padding: 40px 5px;"></header>
-<h1 class="w3-margin w3-xlarge" > Resume Builder</h1>
-    <div>
+  <header>
+    <div style="background-color: #FFD15C; color: #344A5E;" , class="container-resume">
+      <header style="padding: 40px 5px;"></header>
+      <h1 class="w3-margin w3-xlarge"> Resume Builder</h1>
+      <div>
         <h1>Let's get building!</h1>
         <h3>Enter your background history, and we'll make it easy!</h3>
+      </div>
     </div>
-    </div>
-</header>
+  </header>
 
- <!-- First Grid -->
- <div class="flex-container">
+  <!-- First Grid -->
+  <div class="flex-container">
 
-  <div class="flex-child magenta" style="flex:0 1 50%;">
-    <div class="polaroid" style="cursor: move;">
-      <p style="margin:20px"> Ryerson University
-        <br>Auguest 2017 - Present
-        <br>Computer Science Major | GPA: 3.9
-      </p>
-    </div>
-    <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
-      Where tags will go
-    </div>
+    <div class="flex-child magenta" style="flex:0 1 50%;">
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"> <strong>Ryerson University</strong>
+          <br><em>August 2017 - Present</em>
+          <br>Computer Science Major | GPA: 3.9
+        </p>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
 
-    <div class="polaroid" style="cursor: move;">
-      <p style="margin:20px"> Microsoft
-        <br>Explore Intern (June 2018-August 2018)
-        <br>Developed an environment tool to efficiently test bugs for the Office Suite apps
-      </p>
-    </div>
-    <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
-      Where tags will go
-    </div>
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"> <strong>Microsoft</strong>
+          <br>Explore Intern <em>(June 2018-August 2018)</em>
+          <br>Developed an environment tool to efficiently test bugs for the Office Suite apps
+        </p>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
 
-    <div class="polaroid" style="cursor: move;">
-      <p style="margin:20px"> Project
-        <br>Role and/or Dates 
-        <br>Bullet 1
-        <br>Bullet 2
-        <br>Bullet 3
-      </p>
-    </div>
-    <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
-      Where tags will go
-    </div>
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"><strong>Project</strong>
+          <br>Role and/or Dates
+          <br>Bullet 1
+          <br>Bullet 2
+          <br>Bullet 3
+        </p>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
 
-    <!-- Add Experience -->
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">+</button>
+      <!-- Add Experience -->
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">+</button>
 
-    <div id="id01" class="modal">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <form class="modal-content" action="/action_page.php">
-        <div class="container">
-          <h1>Add an Experience/Project/Education</h1>
-          <hr>
-          <label for="Company"><b>Company/Project/School Name *</b></label>
-          <input type="text" placeholder="Enter Name" name="Name" required>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Add an Experience/Project/Education</h1>
+            <hr>
+            <label for="Company"><b>Company/Project/School Name *</b></label>
+            <input type="text" placeholder="Enter Name" name="Name" required>
 
-          <label for="Position"><b>Role Title </b></label>
-          <input type="text" placeholder="Enter Role Title" name="role">
-          
-          <label for="startdate"><b>Enter Start Date *</b></label>
-          <input type="month" placeholder="Enter Bullet 1" name="startdate" required>
+            <label for="Position"><b>Role Title </b></label>
+            <input type="text" placeholder="Enter Role Title" name="role">
 
-          <label for="enddate"><b>Enter End Date</b></label>
-          <input type="month" placeholder="Enter Bullet 1" name="enddate">
+            <label for="startdate"><b>Enter Start Date *</b></label>
+            <input type="month" placeholder="Enter Bullet 1" name="startdate" required>
 
-          <label>
-            <input type="checkbox" checked="checked" name="current" style="margin-bottom:15px"> This is my current role
-          </label>
-          
-          <p></p>
-          
-          <label for="Bullet1"><b>Enter Bulletpoint 1 *</b></label>
-          <input type="text" placeholder="Coordinated efforts to ..." name="Bullet1" required>
+            <label for="enddate"><b>Enter End Date</b></label>
+            <input type="month" placeholder="Enter Bullet 1" name="enddate">
 
-          <label for="Bullet2"><b>Enter Bulletpoint 2</b></label>
-          <input type="text" placeholder="Increased efficiency by ..." name="Bullet2">
+            <label>
+              <input type="checkbox" checked="checked" name="current" style="margin-bottom:15px"> This is my current
+              role
+            </label>
 
-          <label for="Bullet3"><b>Enter Bulletpoint 3 </b></label>
-          <input type="text" placeholder="Developed script that ..." name="Bullet3">
+            <p></p>
 
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn w3-green" style="border-radius: 0px;">Add Experience</button>
+            <label for="Bullet1"><b>Enter Bulletpoint 1 *</b></label>
+            <input type="text" placeholder="Coordinated efforts to ..." name="Bullet1" required>
+
+            <label for="Bullet2"><b>Enter Bulletpoint 2</b></label>
+            <input type="text" placeholder="Increased efficiency by ..." name="Bullet2">
+
+            <label for="Bullet3"><b>Enter Bulletpoint 3 </b></label>
+            <input type="text" placeholder="Developed script that ..." name="Bullet3">
+
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn w3-green" style="border-radius: 0px;">Add Experience</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
     </div>
 
-    <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
-  </div>
-  
 
 
-  <div class="sticky">
-    <img src="page.JPG" class="sticky" >
-  </div>
+    <div class="sticky">
+      <img src="page.JPG" class="sticky">
+    </div>
 
 
-  <div class="flex-child sticky" style="background-color: #DCDCDC; flex:0 0 2px;">
+    <div class="flex-child sticky" style="background-color: #DCDCDC; flex:0 0 2px;">
       Sticky Box
+    </div>
+
   </div>
-  
-</div>
- 
+
 
 
 
