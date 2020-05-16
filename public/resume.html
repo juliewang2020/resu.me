@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>RESU.ME</title>
-    </head>
-    <body>
-        <h1>RESU.ME</h1>
-        <p>Here is where you can customize your resume!</p>
-    </body>
+<!-- Blue: #344A5E
+Yellow: #FFD15C
+Font: Futura -->
+<html lang="en">
+<title>resu.me</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="idea.png" />
+<link rel="stylesheet" href="homestyle.css">
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+      <img src="resume-nobg.png" style="height: 20%; width: 20%; object-fit: fill; padding: 0px 0px 0px 15px;" />
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="tips.html" style="float: right;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">Tips</a> 
+      <a href="nlp.html" style="float: right;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-amber">NLP Analysis</a> 
+      <a href="#" style="float: right; text-align:center; display:inline-block;"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue-gray">Resume Builder</a> 
+      <a href="home.html" style="float: right;" class="w3-bar-item w3-button w3-padding-large w3-hover-amber">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="resume.html" class="w3-bar-item w3-button w3-padding-large">Resume Builder</a>
+        <a href="tips.html" class="w3-bar-item w3-button w3-padding-large">Tips</a>
+        <a href="nlp.html" class="w3-bar-item w3-button w3-padding-large">NLP Analysis</a>
+    </div>
+</div>
+
+<!-- Header -->
+
+<header>
+<div style="background-color: #FFD15C; color: #344A5E;" class="w3-container w3-center w3-padding-64">
+<header style="padding: 40px 5px;"></header>
+<h1 style="" class="w3-margin w3-xlarge"> Resume Builder</h1>
+    <div>
+        <h1>Let's get building!</h1>
+        <h3>Enter your background history, and we'll make it easy!</h3>
+    </div>
+</header>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center">
+    <p>
+        Designed and Made by Michelle <i class="fa fa-linkedin w3-hover-opacity"></i>, Julie <i
+            class="fa fa-linkedin w3-hover-opacity"></i>, Jess <a href="https://www.linkedin.com/in/truong-jessica-tx/"
+                                                                  target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>, and Helen <i
+            class="fa fa-linkedin w3-hover-opacity"></i> for RUHacks 2020
+    </p>
+</footer>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
 </html>
