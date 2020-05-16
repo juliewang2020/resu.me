@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "resu-me-ruhacks2020",
+  "private_key_id": "6769c8716b8defbd8822b9d7ad7cd41d6139dfb0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDbhxafmoRY6+Fj\nM8Ykhaut9LgyC7ZFxHXfcJWPFhc+s2kJabzNK1DUwozend52uHIrysTVlnrgAPVU\nuQiWDzW1ZSCsK8ZSbr+HtOkxhX2nCj7O2Ylm0073IUcUPvnN7r5FiGSAMyYbz/cg\nd+Wf33Dgj/AhdEYSxf+ax9Yzhqib2BX5FP0T1iSj+at2oHwdVsamAgC0IzsSHARK\nEzuV62klFH6ASY0qL+zfodlET7ueVaiSt4xYGT0QuDwP+x9YAbtOa31WAWCaGtOe\nm4iOwoL0U/vyD8KJ9yfY0OfI2buAsPVjW3eDdMZpIUOuTHbZ3sGcDh80YJk+cFW9\ni5Zqj/69AgMBAAECggEAIb+ymW5UjuQShiD5Qvee1VM0NxNoXfDuSx/AilsTz0Kf\nMQCFs0gHuPHA3N+Jyhggiz10xb5I3SOgk7oPiRxE/kJSA84GAvm+LbOBDykt0E6J\nqdy1HC77qo/94K2u0zszGrb1dmUGpItz+1SbY1jjPk66lLYOqMeyPD4hHtJCnRSS\nCUflbruVspfibe6WofMGNNCoGYesIrk5xEd0/YJtsX+gwDAW7q2wmAnsYzWhTO/I\neoxBPs75K7kWESqbUv82VhZKpwNIRZnjN/CdGnpD8kaol4hOHYRcBw1T7n2RjikX\nARhJyDavH8kpp0aCmPzJePwtUsxSZLn7HcdmdSpUOQKBgQD6peFKsSB+aIQk4FMH\n+aE70uPu1TLHwzvQ3GwuysnEQBtG8pLAAdIBB4ThpE8pTO4j5lFjpnS/SpgM6AH5\nTZIQsh7cCFU56E5joc8E7qsTj7pARy32+RHxCA3onxldmUx6qX9As8WZNggXnvV0\nxIy8HDaNSGt/Iy9EaN0qCWcYxQKBgQDgNxhdPmgDuCtzwEvm73vVvyFtCgtzDOFE\nr+gaNC4IOCJ7HSg6xVH9w6icDF7MwavH+RIOA1hnuhAOEUW8wBux0axyapu/tzND\n3PdGrHZth92CD5enp7nO8/Gg7s2SZiP+eOhreJCRxlXEbOQTHRRRNe/Qmxi6AlgS\nsJ3GSxJ9mQKBgQD3TS+qWHVtA4ZONB74YW6Z7gwCm8xMmO6ttq3uxRqqTW4cZD4y\nwBkJ9vc/ArUwVL0qIpbvMU9DZj/7i/ZWmhih7HzSME6WogSl/QKbJTkaRddIkHJj\nmYAARygh+sg2N4jkBdSObFFsR4lYdPhNy5foChYw8+FMQdTjNGvyi/By2QKBgCg0\nuQG/dxdzpxcSnInE2Af0RiIvcu4mmR6gDJbmVHrU1hoNmHExgQpoU4voC/fbotox\nJ7OrlebDzq03G7JFILI6TxoVU+iFCYRZ012w/2uUuXvhH+jIguFBjUq2h9aAymOP\net4KuKHrVuXqQNvMkyAc8+wMY9q3IOP5F9G/FInBAoGBANTzb0uBGAjUPqvPb4FY\n8NQRviaCCgS/rzTnb2hYg5iMwEy+R6+um0HKO1BQsoxGeE1qH5LrB8xXhHPZ70wI\nCnn0sdfCPuCfXPCOhCblx+944domiPfTOXFAMdkK5cnASIeDk0q0Yv58RB2mPmWy\nPnIdNyNhrszgI5llOCe4I+uX\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-fileuploader@resu-me-ruhacks2020.iam.gserviceaccount.com",
+  "client_id": "109676699859992284790",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-fileuploader%40resu-me-ruhacks2020.iam.gserviceaccount.com"
+}

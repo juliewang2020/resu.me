@@ -17,10 +17,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/home.html'));
 });
 
-// Retrieve Style Sheet later
-// app.get('/style.css', function(req, res) {
-//   res.sendFile(__dirname + "/public/style.css");
-// });
+// Bucket Upload
+
 
 // Run NLP Analysis
 async function quickstart() {
