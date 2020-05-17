@@ -167,6 +167,11 @@ Font: Futura -->
       list-style-position: inside;
     }
 
+    li {
+      font-size: 11px;
+      text-align: left;
+    }
+
     p + ul {
       margin-top: -20px;
     }
@@ -207,7 +212,9 @@ Font: Futura -->
       <div>
         <h1>Let's get building!</h1>
         <h3>Enter your background history, and we'll make it easy!</h3>
+          <br><br><br>
       </div>
+    </div>
   </header>
 
   <!-- First Grid -->
@@ -218,40 +225,91 @@ Font: Futura -->
         <p style="margin:20px"> <strong>Ryerson University</strong>
           <br><em>August 2017 - Present</em>
             <ul>
-              <li>Computer Science Major | GPA: 3.9</li>
+              <li>Bachelor of Science in Computer Science | GPA: 3.6</li>
             </ul>
-        </p>
       </div>
       <div style="margin-top:5px; margin-bottom:20px;">
-        <div class="pageHolder"style="margin-top:10px" >
+        <div class="pageHolder" style="margin-top:10px" >
           <div class="floatoneline" style="background-color: #f44336; border-radius: 25px; height:25px; text-align: center; margin-right: 5px"> <p>Education</p> </div>  
           <div class="floatoneline" style="background-color: #FFD15C; border-radius: 25px; height:25px; display: inline-block"> <p>School</p> </div>  
         </div>
       </div>
 
       <div class="polaroid" style="cursor: move;">
-        <p style="margin:20px"> <strong>Microsoft</strong>
-          <br>Explore Intern <em>(June 2018-August 2018)</em>
+        <p style="margin:20px"> <strong>Prodigy Analytics</strong>
+          <br>Software Development Intern <em>(August 2019 - October 2019)</em>
             <ul>
-              <li>Developed an environment tool to efficiently test bugs for the Office Suite apps</li>
+              <li>Design a web scraper using JavaScript to mine Fortnite players’ social media statistics from various sources</li>
             </ul>
-        </p>
       </div>
       <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
         Where tags will go
       </div>
 
       <div class="polaroid" style="cursor: move;">
-        <p style="margin:20px"><strong>Project</strong>
-          <br>Role and/or Dates
-          <br>Bullet 1
-          <br>Bullet 2
-          <br>Bullet 3
-        </p>
+        <p style="margin:20px"><strong>Bank Marketing Success Classification</strong>
+          <br>Intro. to Business Analytics Team Project <em>(October 2019)</em>
+          <ul>
+            <li>Analyzed a large dataset of 40,000 rows to determine necessary variable transformations and data cleaning </li>
+            <li>Built a classification model to determine if a customer will deposit based on 20 features and 40,000 rows of data</li>
+            <li>Performed model selection and optimization between decision trees, logistic regression, and k-NN algorithms </li>
+          </ul>
       </div>
       <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
         Where tags will go
       </div>
+
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"><strong>The Home Depot</strong>
+          <br>Software Engineer Intern <em>(May 2019 - August 2019)</em>
+          <ul>
+            <li>Implemented a Grafana dashboard using MySQL to visualize the status of 50,000 SKU allocations per day  </li>
+            <li>Designed 53 visualizations to monitor the health of the allocation process and allow for proactive fixes</li>
+            <li>Built microservice using Spring Boot  and Java to pull data into database tables from the distribution data processor </li>
+          </ul>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
+
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"><strong>Residence Hall Association</strong>
+          <br>VP of Advocacy <em>(August 2017 - May 2018)</em>
+          <ul>
+            <li>Directed the Vice Presidents of 11 hall councils to push for building improvements in individual halls </li>
+            <li>Guided the VPs to achieve approval for additional amenities by helping design surveys for unbiased data collection</li>
+            <li>Devised and attained personal initiative to place hammock posts on campus at four different locations </li>
+          </ul>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
+
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"><strong>Car-bon Footprint</strong>
+          <br>PearlHacks 2019 Project <em>(February 2019)</em>
+          <ul>
+            <li>Uses Google Maps API  to calculate the amount of carbon produced by a certain make/model car for a trip </li>
+            <li>Awarded Best Use of Google APIs and Most Environmentally Aware Hack</li>
+          </ul>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
+
+      <div class="polaroid" style="cursor: move;">
+        <p style="margin:20px"><strong>Consult Your Community</strong>
+          <br> Engagment Manager, Business Analyst <em>(September 2017 - Present)</em>
+          <ul>
+            <li>Provide pro-bono consultation to local businesses and non-profits around Atlanta </li>
+            <li>Assist business owners/nonprofit chairs in making informed decisions by doing research and strategic planning</li>
+          </ul>
+      </div>
+      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
+        Where tags will go
+      </div>
+
+
 
       <!-- Add Experience -->
       <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">+</button>
@@ -290,8 +348,8 @@ Font: Futura -->
             <input type="text" placeholder="Developed script that ..." name="Bullet3">
 
             <label for="tags"><b> Add Tags </b></label><br>
-            <input type="checkbox" id="School" name="School" value="School">
-            <label for="School"> School </label>
+            <input type="checkbox" id="School-Related" name="School" value="School">
+            <label for="School"> School-Related </label>
             <input type="checkbox" id="Education" name="Education" value="Education">
             <label for="Education"> Education </label>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
@@ -305,15 +363,17 @@ Font: Futura -->
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             <label for="vehicle3"> Hackathon </label>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Personal Project </label>
+            <label for="vehicle3"> Project </label><br>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> School Project </label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Leadership </label>
+            <label for="vehicle3"> Leadership </label> 
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
             <label for="vehicle3"> Volunteering </label>
             <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> Participation </label>
+            <label for="vehicle3"> Participation </label> <br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Awards/Honors </label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> Skills </label>
                       
 
             <div class="clearfix">
@@ -338,14 +398,11 @@ Font: Futura -->
       </script>
     </div>
 
-    <div class="sticky">
+    <div class="sticky" style="padding-top: 60px;">
       <img src="page.JPG" class="sticky" style="margin-left: 150px">
       <button class="button sticky w3-amber" style="float: right; width:150px; position:relative;">Download Me!</button>
     </div>
   </div>
-
-
-
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-center">
