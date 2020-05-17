@@ -17,14 +17,3 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/home.html'));
 });
 
-// 
-
-function logPaste(event) {
-  log.innerText = 'Analyzing!\n' + log.innerText;
-}
-
-const editor = document.getElementById('editor');
-const log = document.getElementById('log');
-
-editor.oncopy = logCopy;
-editor.onpaste = logPaste;
