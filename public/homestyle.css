@@ -68,7 +68,7 @@ h6 {
 
 .flex-child {
   flex: 1;
-  border: 2px solid yellow;
+  border: none;
 }  
 
 .flex-child:first-child {
