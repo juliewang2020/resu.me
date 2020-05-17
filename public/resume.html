@@ -165,9 +165,18 @@ Font: Futura -->
     } 
     .pageHolder
     { 
-    overflow: auto; 
-    width: 100%; 
+      overflow: auto; 
+      width: 100%; 
     } 
+
+    ul {
+      text-align: center;
+      list-style-position: inside;
+    }
+
+    p + ul {
+      margin-top: -20px;
+    }
 </style>
 
 
@@ -217,20 +226,24 @@ Font: Futura -->
       <div class="polaroid" style="cursor: move;">
         <p style="margin:20px"> <strong>Ryerson University</strong>
           <br><em>August 2017 - Present</em>
-          <br>Computer Science Major | GPA: 3.9
+            <ul>
+              <li>Computer Science Major | GPA: 3.9</li>
+            </ul>
         </p>
       </div>
-      <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
-        <div class="pageHolder" >
-          <div class="floatoneline" style="background-color: #f44336; border-radius: 25px; "> <p>Education</p> </div>  
-          <div class="floatoneline" style="background-color: #FFD15C; border-radius: 25px;"> <p>School</p> </div>  
+      <div style="margin-top:5px; margin-bottom:20px;">
+        <div class="pageHolder"style="margin-top:10px" >
+          <div class="floatoneline" style="background-color: #f44336; border-radius: 25px; height:25px; text-align: center; margin-right: 5px"> <p>Education</p> </div>  
+          <div class="floatoneline" style="background-color: #FFD15C; border-radius: 25px; height:25px;"> <p>School</p> </div>  
         </div>
       </div>
 
       <div class="polaroid" style="cursor: move;">
         <p style="margin:20px"> <strong>Microsoft</strong>
           <br>Explore Intern <em>(June 2018-August 2018)</em>
-          <br>Developed an environment tool to efficiently test bugs for the Office Suite apps
+            <ul>
+              <li>Developed an environment tool to efficiently test bugs for the Office Suite apps</li>
+            </ul>
         </p>
       </div>
       <div style="margin-top:5px; margin-bottom:20px; margin-left: 70px;">
